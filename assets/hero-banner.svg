@@ -1,0 +1,123 @@
+<svg viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e4f1fc"/>
+      <stop offset="55%" stop-color="#f5f9fd"/>
+      <stop offset="100%" stop-color="#fdedde"/>
+    </linearGradient>
+    <linearGradient id="coolGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#29a9e0"/>
+      <stop offset="100%" stop-color="#1668c9"/>
+    </linearGradient>
+    <linearGradient id="warmGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7941d"/>
+      <stop offset="100%" stop-color="#e8491f"/>
+    </linearGradient>
+    <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eaf0f6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="640" height="480" rx="32" fill="url(#bgGrad)"/>
+
+  <!-- ground -->
+  <rect x="0" y="392" width="640" height="88" rx="0" fill="#e7eef5"/>
+  <rect x="0" y="392" width="640" height="6" fill="#d7e2ec"/>
+
+  <!-- sun (warm side) -->
+  <g transform="translate(506,88)">
+    <circle r="34" fill="url(#warmGrad)"/>
+    <g stroke="#f7941d" stroke-width="5" stroke-linecap="round" opacity=".85">
+      <line x1="0" y1="-52" x2="0" y2="-66"/>
+      <line x1="0" y1="52" x2="0" y2="66"/>
+      <line x1="-52" y1="0" x2="-66" y2="0"/>
+      <line x1="52" y1="0" x2="66" y2="0"/>
+      <line x1="-37" y1="-37" x2="-47" y2="-47"/>
+      <line x1="37" y1="-37" x2="47" y2="-47"/>
+      <line x1="-37" y1="37" x2="-47" y2="47"/>
+      <line x1="37" y1="37" x2="47" y2="47"/>
+    </g>
+  </g>
+
+  <!-- snowflake (cool side) -->
+  <g transform="translate(112,96)" stroke="url(#coolGrad)" stroke-width="6" stroke-linecap="round">
+    <line x1="0" y1="-38" x2="0" y2="38"/>
+    <line x1="-33" y1="-19" x2="33" y2="19"/>
+    <line x1="-33" y1="19" x2="33" y2="-19"/>
+    <line x1="0" y1="-38" x2="-11" y2="-24"/>
+    <line x1="0" y1="-38" x2="11" y2="-24"/>
+    <line x1="0" y1="38" x2="-11" y2="24"/>
+    <line x1="0" y1="38" x2="11" y2="24"/>
+  </g>
+
+  <!-- roof -->
+  <polygon points="150,232 320,120 490,232" fill="#0d2b52"/>
+  <polygon points="150,232 320,120 320,146 176,232" fill="#123561"/>
+
+  <!-- chimney -->
+  <rect x="410" y="150" width="26" height="60" fill="#0d2b52"/>
+
+  <!-- house body -->
+  <rect x="172" y="232" width="296" height="160" fill="url(#wallGrad)" stroke="#dbe4ee" stroke-width="2"/>
+
+  <!-- door -->
+  <rect x="292" y="322" width="56" height="70" rx="4" fill="#0d2b52"/>
+  <circle cx="336" cy="358" r="2.6" fill="#fff"/>
+
+  <!-- left window -->
+  <rect x="204" y="268" width="56" height="52" rx="4" fill="#eaf4fc" stroke="#0d2b52" stroke-width="3"/>
+  <line x1="232" y1="268" x2="232" y2="320" stroke="#0d2b52" stroke-width="3"/>
+  <line x1="204" y1="294" x2="260" y2="294" stroke="#0d2b52" stroke-width="3"/>
+
+  <!-- right small window -->
+  <rect x="380" y="268" width="46" height="42" rx="4" fill="#fdeee0" stroke="#0d2b52" stroke-width="3"/>
+  <line x1="403" y1="268" x2="403" y2="310" stroke="#0d2b52" stroke-width="3"/>
+  <line x1="380" y1="289" x2="426" y2="289" stroke="#0d2b52" stroke-width="3"/>
+
+  <!-- comfort glow behind outdoor unit -->
+  <ellipse cx="150" cy="352" rx="90" ry="60" fill="url(#glow)"/>
+
+  <!-- outdoor unit bracket -->
+  <rect x="76" y="356" width="14" height="8" fill="#5b6b7c"/>
+  <rect x="150" y="356" width="14" height="8" fill="#5b6b7c"/>
+  <rect x="72" y="362" width="10" height="18" fill="#3b4753"/>
+  <rect x="154" y="362" width="10" height="18" fill="#3b4753"/>
+
+  <!-- outdoor unit body -->
+  <rect x="66" y="298" width="140" height="64" rx="8" fill="#f4f7fa" stroke="#c7d3de" stroke-width="2"/>
+  <!-- vents -->
+  <g stroke="#aebccb" stroke-width="3" stroke-linecap="round">
+    <line x1="76" y1="308" x2="76" y2="352"/>
+    <line x1="84" y1="308" x2="84" y2="352"/>
+    <line x1="92" y1="308" x2="92" y2="352"/>
+  </g>
+  <!-- fan grille -->
+  <circle cx="148" cy="330" r="26" fill="#e7edf3" stroke="#c7d3de" stroke-width="2"/>
+  <circle cx="148" cy="330" r="18" fill="none" stroke="#aebccb" stroke-width="2"/>
+  <circle cx="148" cy="330" r="10" fill="none" stroke="#aebccb" stroke-width="2"/>
+  <g stroke="#8ea0b3" stroke-width="1.6">
+    <line x1="148" y1="304" x2="148" y2="356"/>
+    <line x1="122" y1="330" x2="174" y2="330"/>
+    <line x1="130" y1="312" x2="166" y2="348"/>
+    <line x1="166" y1="312" x2="130" y2="348"/>
+  </g>
+  <circle cx="148" cy="330" r="3.2" fill="url(#coolGrad)"/>
+
+  <!-- brand strip on unit -->
+  <rect x="182" y="308" width="20" height="44" rx="4" fill="url(#coolGrad)"/>
+
+  <!-- airflow wave (cool, from unit outward) -->
+  <path d="M210,296 Q236,282 262,296 T314,296" fill="none" stroke="url(#coolGrad)" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+  <!-- airflow wave (warm, near right window) -->
+  <path d="M378,344 Q404,330 430,344 T482,344" fill="none" stroke="url(#warmGrad)" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+
+  <!-- shrubs -->
+  <ellipse cx="500" cy="386" rx="30" ry="18" fill="#8fbf8a"/>
+  <ellipse cx="530" cy="392" rx="22" ry="14" fill="#79ad76"/>
+  <ellipse cx="160" cy="390" rx="20" ry="12" fill="#8fbf8a"/>
+</svg>
